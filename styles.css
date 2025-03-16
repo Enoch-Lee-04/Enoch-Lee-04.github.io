@@ -81,19 +81,41 @@ p {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--primary-color);
     text-decoration: none;
-    letter-spacing: 1px;
-    padding: 0.5rem;
-    border: 2px solid var(--primary-color);
+    padding: 0.6rem 1rem;
+    position: relative;
+    background: var(--background);
     transition: var(--transition);
 }
 
+.logo::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    padding: 2px;
+    background: linear-gradient(45deg, #000, #333);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
 .logo:hover {
-    background-color: var(--primary-color);
     color: var(--background);
+    background: linear-gradient(45deg, #000, #333);
+    border-radius: 4px;
+}
+
+.logo:hover::before {
+    opacity: 0;
 }
 
 .nav-links {
