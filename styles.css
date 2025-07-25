@@ -415,16 +415,24 @@ p {
     margin-bottom: 0.5rem;
 }
 
+.company-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 .company {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--primary-color);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
 }
 
 .period {
     font-size: 1.1rem;
     color: var(--light-text);
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    text-align: right;
 }
 
 .achievements {
