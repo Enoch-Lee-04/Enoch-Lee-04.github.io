@@ -381,7 +381,7 @@ p {
 /* Experience Section */
 .experience {
     padding: 1rem 0;
-    background-color: var(--section-bg);
+    background-color: var(--background);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -458,7 +458,7 @@ p {
 /* Research Section */
 .research {
     padding: 1rem 0;
-    background-color: var(--background);
+    background-color: var(--section-bg);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -468,6 +468,11 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem var(--spacing-unit);
+}
+
+.research .timeline {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .research .timeline-content {
