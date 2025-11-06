@@ -13,8 +13,8 @@
             <a href="#" class="logo">EL</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#research">Research</a></li>
+                <li><a href="#experience">Professional Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -32,7 +32,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Hi, I'm <span class="highlight">Enoch Lee</span></h1>
-                <p class="subtitle">A data scientist and developer studying Economics and Data Science at the University of Texas at Austin. With hands-on experience in data engineering and analytics, I specialize in creating cutting-edge, user-friendly solutions that solve real-world problems. I'm currently building my expertise through AI-powered projects and looking for new opportunities to apply my skills.</p>
+                <p class="subtitle">I am an undergraduate student studying Economics and Data Science at the University of Texas at Austin. I am passionate about applying computer vision and deep learning to improve autonomous vehicle perception, humanoid robot intelligence, and urban traffic safety. I am currently conducting research under Dr. Kang at the GISense Lab, where I fine-tune vision language models (VLMs) on street view imagery to assess pedestrian safety and uncover environmental risk factors.</p>
                 <div class="hero-links">
                     <div class="location">
                         <i class="fas fa-map-marker-alt"></i>
@@ -56,8 +56,43 @@
         </div>
     </section>
 
-    <section id="work experience" class="work experience">
-        <h2>Work Experience</h2>
+    <section id="research" class="research">
+        <h2>Research Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="company-row">
+                        <p class="company">GISense Lab - University of Texas at Austin</p>
+                        <p class="period">August 2025 - Present</p>
+                    </div>
+                    <h3>Undergraduate Research Assistant</h3>
+                    <ul class="achievements">
+                        <li>Developed a vision language model (VLM) pipeline to evaluate pedestrian safety from real world street view images, generating 0-10 safety scores and categorical labels for urban environments.</li>
+                        <li>Fine-tuned Qwen2-VL 2B using PyTorch and Transformers for safety assessment, completing 27 training epochs on annotated images.</li>
+                        <li>Built automated OpenAI Files API scripts to compare GPT-4 (Vision) with the fine-tuned Qwen baseline, extracting safety scores and generating JSON based side-by-side comparisons.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="company-row">
+                        <p class="company">The University of Texas at Austin</p>
+                        <p class="period">2025</p>
+                    </div>
+                    <h3>Author: Enoch Lee</h3>
+                    <p class="research-title">"The Effect of Statewide Lockdown During COVID-19 on Small Business Closure Rate"</p>
+                    <ul class="achievements">
+                        <li>Conducted regression analysis on state-level data to examine how COVID-19 lockdown policies affected small business closure rates across the U.S. Findings contribute to understanding the effectiveness of emergency economic relief programs. Currently under revision for journal submission.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="work experience">
+        <h2>Professional Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-content">
@@ -69,7 +104,7 @@
                     <ul class="achievements">
                         <li>Designed and implemented a user persona analysis pipeline in Power BI, combining data across multiple product event logs using a centralized Master Users table to unify identities with distinct login credentials.</li>
                         <li>Unified 600 K+ distinct user logins from eight products into CDK’s first enterprise wide Master User system, now leveraged as the cross department analytics, optimize product marketing, and strengthen user data security.</li>
-                        <li>Engineered an event-based analytical dashboard in Power BI utilizing DAX queries to visualize user interactions, identify role-specific event trends, and optimize workflow adoption strategies.</li>
+                        <li>Engineered an event-based analytical dashboard in Power BI utilizing DAX queries to visualize user interactions, identify role-specific event trends, and optimize workflow modernization efforts.</li>
                         <li>Optimized complex data models and relationships within Power BI DAX-calculated tables to support scalable and performant analytics, reducing data processing times by 175% and query latency.</li>
                     </ul>
                 </div>
@@ -105,25 +140,6 @@
         </div>
     </section>
 
-    <section id="research" class="research">
-        <h2>Research Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="company-row">
-                        <p class="company">The University of Texas at Austin</p>
-                        <p class="period">2025</p>
-                    </div>
-                    <h3>Author: Enoch Lee</h3>
-                    <p class="research-title">"The Effect of Statewide Lockdown During COVID-19 on Small Business Closure Rate"</p>
-                    <ul class="achievements">
-                        <li>Conducted regression analysis on state-level data to examine how COVID-19 lockdown policies affected small business closure rates across the U.S. Findings contribute to understanding the effectiveness of emergency economic relief programs. Currently under revision for journal submission.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="skills" class="skills">
         <h2>Skills</h2>
         <div class="skills-grid">
@@ -144,6 +160,9 @@
                 <ul>
                     <li>React</li>
                     <li>Node.js</li>
+                    <li>Hugging Face Transformers</li>
+                    <li>Qwen2-VL</li>
+                    <li>OpenCV</li>
                     <li>PyTorch</li>
                     <li>Flask</li>
                     <li>Pandas</li>
@@ -161,6 +180,7 @@
                     <li>VS Code</li>
                     <li>RStudio</li>
                     <li>Cursor</li>
+                    <li>Conda</li>
                     <li>Power BI</li>
                     <li>Microsoft Excel</li>
                     <li>Jupyter Notebook</li>
@@ -173,6 +193,8 @@
                 <h3>Others</h3>
                 <ul>
                     <li>Machine Learning</li>
+                    <li>Reinforcement Learning</li>
+                    <li>Computer Vision</li>
                     <li>Statistical Analysis</li>
                     <li>Object-Oriented Programming (OOP)</li>
                     <li>Data Visualization</li>
