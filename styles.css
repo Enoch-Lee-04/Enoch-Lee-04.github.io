@@ -266,7 +266,7 @@ p {
 /* Projects Section */
 .projects {
     padding: 1rem 0;
-    background-color: var(--background);
+    background-color: var(--section-bg);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -544,7 +544,7 @@ p {
 /* Contact Section */
 .contact {
     padding: 1rem 0;
-    background-color: var(--section-bg);
+    background-color: var(--background);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -599,7 +599,7 @@ footer {
     text-align: center;
     font-size: 1.1rem;
     color: var(--light-text);
-    background-color: var(--section-bg);
+    background-color: var(--background);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);

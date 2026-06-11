@@ -15,7 +15,6 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#experience">Professional Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://drive.google.com/file/d/1uGNnclMKa4D6iamFj-TaekvlHty7yHLo/view?usp=sharing" target="_blank" class="resume-btn">Resume <i class="fas fa-external-link-alt"></i></a></li>
@@ -32,11 +31,11 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Hi, I'm <span class="highlight">Enoch Lee</span></h1>
-                <p class="subtitle">I am an undergraduate student studying Economics and Data Science at the University of Texas at Austin. I am passionate about applying computer vision and deep learning to improve autonomous vehicle perception, humanoid robot intelligence, and urban traffic safety. I am currently conducting research under Dr. Kang at the GISense Lab, where I fine-tune vision language models (VLMs) on street view imagery to assess pedestrian safety and uncover environmental risk factors.</p>
+                <p class="subtitle">I'm a Master of Science in Data Science student at Columbia University. I’m passionate about building AI systems that transform real world data into actionable insights. My main interests include machine learning and computer vision, with a focus on developing full pipelines, training and optimizing models, and deploying scalable solutions.</p>
                 <div class="hero-links">
                     <div class="location">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Austin, TX</span>
+                        <span>New York, NY</span>
                     </div>
                     <div class="social-links">
                         <a href="https://github.com/Enoch-Lee-04" target="_blank" title="GitHub">
@@ -67,9 +66,10 @@
                     </div>
                     <h3>Undergraduate Research Assistant</h3>
                     <ul class="achievements">
-                        <li>Developed a vision language model (VLM) pipeline to evaluate pedestrian safety from real world street view images, producing 0-10 safety scores and categorical safety labels.</li>
-                        <li>Fine-tuned Qwen2-VL 2B and GPT-4o-mini using PyTorch and Transformers, completing 27 training epochs on annotated datasets and benchmarking model performance across safety-related tasks.</li>
-                        <li> Processed and analyzed 1,564 Austin Texas street view images, producing a research paper on urban safety perception using large scale VLM evaluation.</li>
+                        <li>Developed a multimodal VLM pipeline for pedestrian safety assessment, converting real-world street view images into natural language explanations, continuous 0-10 safety scores, and categorical risk classifications.</li>
+                        <li>Created a manually annotated ground truth dataset of Austin, TX street view images and benchmarked model predictions using MAE, RMSE, and ±1/±2-point accuracy against human safety labels.</li>
+                        <li>Fine-tuned and evaluated Qwen2-VL 2B and GPT-4o-mini for urban safety perception, achieving 1.09 MAE, 1.21 RMSE, 81.8% ±1-point accuracy, and 100% ±2-point accuracy with Qwen2-VL.</li>
+                        <li>Currently conducting cross-city generalization analysis across Austin and Stockholm to evaluate whether VLMs exhibit geographic perception bias or spatial context blindness when applied to unfamiliar urban environments.</li>
                     </ul>
                 </div>
             </div>
@@ -102,10 +102,9 @@
                     </div>
                     <h3>Data Engineer Intern</h3>
                     <ul class="achievements">
-                        <li>Designed and implemented a user persona analysis pipeline in Power BI, combining data across multiple product event logs using a centralized Master Users table to unify identities with distinct login credentials.</li>
-                        <li>Unified 600 K+ distinct user logins from eight products into CDK’s first enterprise wide Master User system, now leveraged as the cross department analytics, optimize product marketing, and strengthen user data security.</li>
-                        <li>Engineered an event-based analytical dashboard in Power BI utilizing DAX queries to visualize user interactions, identify role-specific event trends, and optimize workflow modernization efforts.</li>
-                        <li>Optimized complex data models and relationships within Power BI DAX-calculated tables to support scalable and performant analytics, reducing data processing times by 175% and query latency.</li>
+                        <li>Built a Power BI user persona analytics pipeline integrating product event logs from 8 CDK products, using SQL and DAX to unify 600K+ distinct user logins into a centralized Master Users identity model for cross-product behavioral analysis.</li>
+                        <li>Developed scalable data models, relationships, calculated tables, and DAX measures to analyze high-volume user event data by role, product, and workflow, surfacing persona clusters, product adoption gaps, and role-specific usage trends.<li>
+                        <li>Delivered actionable user behavior insights that informed product modernization initiatives, customer training strategies, marketing segmentation, and feature adoption planning across multiple CDK product teams.</li>
                     </ul>
                 </div>
             </div>
@@ -117,9 +116,9 @@
                     </div>
                     <h3>Data Analyst Intern</h3>
                     <ul class="achievements">
-                        <li>Collaborated with Intel's Sustainability Team to support their carbon-neutrality goals using SQL to extract energy production/consumption across U.S. regions. Identified two optimal locations for Intel’s new data center based on available renewable energy and net energy production.</li>
-                        <li>Centralized insights for organizations like NASA, NBA, Uber, Spotify, and YouTube by developing interactive dashboards using Python, SQL, and Tableau.</li>
-                        <li>Successfully collaborated with a team of 4-6 members to execute complex data analysis projects, delivering insightful visualizations while demonstrating strong teamwork and project management skills.</li>
+                        <li>Extracted, cleaned, and analyzed large-scale energy production and consumption datasets using SQL and Python, applying exploratory data analysis to evaluate renewable energy availability across U.S. regions.</li>
+                        <li>Architected a data driven decision framework to rank potential data center locations using sustainability metrics, regional energy surplus, and renewable energy production indicators.</li>
+                        <li>Presented interactive Tableau dashboards and Python/SQL analytical workflows across multi-domain datasets, performing data cleaning, KPI analysis, and trend visualization.</li>
                     </ul>
                 </div>
             </div>
@@ -139,69 +138,6 @@
             </div>
         </div>
     </section>
-
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>R</li>
-                    <li>DAX</li>
-                    <li>JavaScript</li>
-                    <li>HTML/CSS</li>
-                    <li>Java</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Frameworks</h3>
-                <ul>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Hugging Face Transformers</li>
-                    <li>Qwen2-VL</li>
-                    <li>OpenCV</li>
-                    <li>PyTorch</li>
-                    <li>Flask</li>
-                    <li>Pandas</li>
-                    <li>NumPy</li>
-                    <li>Scikit-Learn</li>
-                    <li>TensorFlow</li>
-                    <li>Matplotlib</li>
-                    <li>Seaborn</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Tools</h3>
-                <ul>
-                    <li>Git</li>
-                    <li>VS Code</li>
-                    <li>RStudio</li>
-                    <li>Cursor</li>
-                    <li>Conda</li>
-                    <li>Power BI</li>
-                    <li>Microsoft Excel</li>
-                    <li>Jupyter Notebook</li>
-                    <li>Tableau</li>
-                    <li>MySQL</li>
-                    <li>Eclipse</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Others</h3>
-                <ul>
-                    <li>Machine Learning</li>
-                    <li>Computer Vision</li>
-                    <li>Statistical Analysis</li>
-                    <li>Object-Oriented Programming (OOP)</li>
-                    <li>Data Visualization</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="project-grid">
