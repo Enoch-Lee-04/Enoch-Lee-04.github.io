@@ -1,53 +1,57 @@
 // Mobile Navigation
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
+const mobileNav = window.matchMedia('(max-width: 900px)'); // keep in sync with styles.css
 
-hamburger.addEventListener('click', () => {
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-    hamburger.classList.toggle('active');
-});
-
-// Enhanced smooth scrolling function
-function smoothScrollTo(target, duration = 800) {
-    const targetElement = document.querySelector(target);
-    if (!targetElement) return;
-
-    const targetPosition = targetElement.offsetTop;
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    let startTime = null;
-
-    function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const progress = Math.min(timeElapsed / duration, 1);
-        
-        // Easing function for smoother animation
-        const ease = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-        
-        window.scrollTo(0, startPosition + distance * ease(progress));
-
-        if (timeElapsed < duration) {
-            requestAnimationFrame(animation);
-        }
-    }
-
-    requestAnimationFrame(animation);
+function setMenuOpen(open) {
+    navLinks.classList.toggle('active', open);
+    hamburger.classList.toggle('active', open);
+    hamburger.setAttribute('aria-expanded', open);
 }
 
-// Apply smooth scrolling to all navigation links
+hamburger.addEventListener('click', () => {
+    setMenuOpen(!navLinks.classList.contains('active'));
+});
+
+// Close the menu after choosing a link, tapping outside it, or pressing Escape
+navLinks.addEventListener('click', (e) => {
+    if (e.target.closest('a')) setMenuOpen(false);
+});
+
+document.addEventListener('pointerdown', (e) => {
+    if (!e.target.closest('.navbar')) setMenuOpen(false);
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+        setMenuOpen(false);
+        hamburger.focus();
+    }
+});
+
+// Reset the menu when the screen widens past the mobile layout (e.g. rotating a tablet)
+window.addEventListener('resize', () => {
+    if (!mobileNav.matches) setMenuOpen(false);
+});
+
+// Smooth scrolling for in-page links. The smoothing comes from `scroll-behavior`
+// in styles.css, which also turns it off for users who prefer reduced motion.
+function scrollToSection(hash) {
+    if (hash === '#') {
+        window.scrollTo(0, 0);
+        return true;
+    }
+    const target = document.getElementById(hash.slice(1));
+    if (!target) return false;
+    target.scrollIntoView();
+    return true;
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = this.getAttribute('href');
-        
-        // Close mobile menu if open
-        if (window.innerWidth <= 768) {
-            navLinks.style.display = 'none';
-            hamburger.classList.remove('active');
+        if (scrollToSection(this.getAttribute('href'))) {
+            e.preventDefault();
         }
-
-        smoothScrollTo(target);
     });
 });
 
@@ -109,9 +113,9 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Smooth scroll to top when button is clicked
+// Smooth scroll to the very top (where the menu is) when button is clicked
 backToTopButton.addEventListener('click', () => {
-    smoothScrollTo('#home');
+    window.scrollTo(0, 0);
 });
 
 // Add active state to navigation links based on scroll position

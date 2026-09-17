@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -11,19 +11,19 @@
     <nav class="navbar">
         <div class="nav-content">
             <a href="#" class="logo">EL</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">About</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#experience">Professional Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://drive.google.com/file/d/1uGNnclMKa4D6iamFj-TaekvlHty7yHLo/view?usp=sharing" target="_blank" class="resume-btn">Resume <i class="fas fa-external-link-alt"></i></a></li>
             </ul>
-            <div class="hamburger">
+            <button type="button" class="hamburger" aria-label="Toggle navigation menu" aria-controls="nav-links" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -49,7 +49,7 @@
             </div>
             <div class="hero-image">
                 <div class="profile-placeholder">
-                    <img src="assets/headshot2.jpg" alt="Your Profile Picture">
+                    <img src="assets/headshot2.jpg" alt="Enoch Lee" width="709" height="992">
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                     <h3>Data Engineer Intern</h3>
                     <ul class="achievements">
                         <li>Built a Power BI user persona analytics pipeline integrating product event logs from 8 CDK products, using SQL and DAX to unify 600K+ distinct user logins into a centralized Master Users identity model for cross-product behavioral analysis.</li>
-                        <li>Developed scalable data models, relationships, calculated tables, and DAX measures to analyze high-volume user event data by role, product, and workflow, surfacing persona clusters, product adoption gaps, and role-specific usage trends.<li>
+                        <li>Developed scalable data models, relationships, calculated tables, and DAX measures to analyze high-volume user event data by role, product, and workflow, surfacing persona clusters, product adoption gaps, and role-specific usage trends.</li>
                         <li>Delivered actionable user behavior insights that informed product modernization initiatives, customer training strategies, marketing segmentation, and feature adoption planning across multiple CDK product teams.</li>
                     </ul>
                 </div>
@@ -144,7 +144,7 @@
             <div class="project-card">
                 <a href="https://github.com/Enoch-Lee-04/Fraud-Payment-Detection-using-ML" target="_blank" class="project-image-link">
                     <div class="project-image">
-                        <img src="assets/Decision Tree.png" alt="Project 1">
+                        <img src="assets/Decision Tree.png" alt="AI-Powered Fraud Detection System preview" loading="lazy" decoding="async">
                     </div>
                 </a>
                 <div class="project-info">
@@ -160,7 +160,7 @@
             <div class="project-card">
                 <a href="https://github.com/Enoch-Lee-04/Weather-Forcasting-Prediction" target="_blank" class="project-image-link">
                     <div class="project-image">
-                        <img src="assets/ATX Weather Forcast.png" alt="Project 2">
+                        <img src="assets/ATX Weather Forcast.png" alt="Weather Forecasting System preview" loading="lazy" decoding="async">
                     </div>
                 </a>
                 <div class="project-info">
@@ -176,7 +176,7 @@
             <div class="project-card">
                 <a href="https://enochlee-severance.vercel.app/" target="_blank" class="project-image-link">
                     <div class="project-image">
-                        <img src="assets/Severance.png" alt="Project 2">
+                        <img src="assets/Severance.png" alt="Severance MDR Task preview" loading="lazy" decoding="async">
                     </div>
                 </a>
                 <div class="project-info">
@@ -192,7 +192,7 @@
             <div class="project-card">
                 <a href="https://github.com/Enoch-Lee-04/Wordle" target="_blank" class="project-image-link">
                     <div class="project-image">
-                        <img src="assets/Wordle_preview.png" alt="Project 3">
+                        <img src="assets/Wordle_preview.png" alt="Wordle Game preview" loading="lazy" decoding="async">
                     </div>
                 </a>
                 <div class="project-info">
@@ -214,7 +214,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:your.email@example.com">lee.enoch03@gmail.com</a>
+                    <a href="mailto:lee.enoch03@gmail.com">lee.enoch03@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-github"></i>
