@@ -64,12 +64,11 @@
                         <p class="company">GISense Lab - University of Texas at Austin</p>
                         <p class="period">August 2025 - Present</p>
                     </div>
-                    <h3>Undergraduate Research Assistant</h3>
+                    <h3>Graduate Research Assistant</h3>
                     <ul class="achievements">
-                        <li>Developed a multimodal VLM pipeline for pedestrian safety assessment, converting real-world street view images into natural language explanations, continuous 0-10 safety scores, and categorical risk classifications.</li>
-                        <li>Created a manually annotated ground truth dataset of Austin, TX street view images and benchmarked model predictions using MAE, RMSE, and ±1/±2-point accuracy against human safety labels.</li>
-                        <li>Fine-tuned and evaluated Qwen2-VL 2B and GPT-4o-mini for urban safety perception, achieving 1.09 MAE, 1.21 RMSE, 81.8% ±1-point accuracy, and 100% ±2-point accuracy with Qwen2-VL.</li>
-                        <li>Currently conducting cross-city generalization analysis across Austin and Stockholm to evaluate whether VLMs exhibit geographic perception bias or spatial context blindness when applied to unfamiliar urban environments.</li>
+                        <li>Fine-tuned Qwen2-VL 2B with LoRA via HuggingFace PEFT, achieving a mean absolute error (MAE) of 1.09 and a root mean square error (RMSE) of 1.21 compared with human rating.</li>
+                        <li>Engineered a multimodal VLM pipeline converting street-view images into 0–10 safety scores and categorical risk labels, enabling benchmarking against human annotations.</li>
+                        <li>Created a safety perception scoring framework using Strength of Schedule adjusted pairwise comparisons and human survey responses, connecting image-level score with the reasoning behind each comparison.</li>
                     </ul>
                 </div>
             </div>
@@ -97,14 +96,34 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <div class="company-row">
-                        <p class="company">CDK Global, <i>Austin TX</i></p>
+                        <div class="company-info">
+                            <p class="company">Doctors Without Borders/Médecins Sans Frontières - USA</p>
+                            <p class="job-location"><i>New York, NY</i></p>
+                        </div>
+                        <p class="period">Aug 2026 - Present</p>
+                    </div>
+                    <h3>Data Engineer Intern</h3>
+                    <ul class="achievements">
+                        <li>Designed a favorability scoring framework for 80+ pre and post assignment staff survey questions, organizing questions by theme, standardizing response classifications as favorable, neutral, or unfavorable, and scoring multi-select questions once per respondent to prevent double counting.</li>
+                        <li>Architected a Power Query ETL pipeline and question crosswalk to transform multi-year survey exports into a relational data model, aligning reworded and reordered questions for consistent year-over-year comparisons.</li>
+                        <li>Quantified shifts in staff perceptions across survey years by experience, job role, and gender with DAX-based KPIs, then presented gaps across 6 question clusters to non-technical People & Culture stakeholders through interactive Power BI dashboards and plain-language documentation.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="company-row">
+                        <div class="company-info">
+                            <p class="company">CDK Global</p>
+                            <p class="job-location"><i>Austin, TX</i></p>
+                        </div>
                         <p class="period">June 2025 - August 2025</p>
                     </div>
                     <h3>Data Engineer Intern</h3>
                     <ul class="achievements">
-                        <li>Built a Power BI user persona analytics pipeline integrating product event logs from 8 CDK products, using SQL and DAX to unify 600K+ distinct user logins into a centralized Master Users identity model for cross-product behavioral analysis.</li>
-                        <li>Developed scalable data models, relationships, calculated tables, and DAX measures to analyze high-volume user event data by role, product, and workflow, surfacing persona clusters, product adoption gaps, and role-specific usage trends.</li>
-                        <li>Delivered actionable user behavior insights that informed product modernization initiatives, customer training strategies, marketing segmentation, and feature adoption planning across multiple CDK product teams.</li>
+                        <li>Unified 600K+ distinct user logins across 8 products through a Power BI and DAX ETL pipeline, creating a single Master Users identity model for cross-product behavioral analysis for the first time.</li>
+                        <li>Developed scalable DAX measures and role-based segmentation models on high-volume event data to identify persona clusters, quantify feature adoptions, and uncover gaps in product usage.</li>
+                        <li>Collaborated with lead business analysts to interpret user behavior dashboards and identify training opportunities, informing product modernization and marketing segmentation strategies.</li>
                     </ul>
                 </div>
             </div>
@@ -142,6 +161,22 @@
         <h2>Projects</h2>
         <div class="project-grid">
             <div class="project-card">
+                <a href="https://github.com/Enoch-Lee-04/Kalman-Filter-Ball-Tracking" target="_blank" class="project-image-link">
+                    <div class="project-image">
+                        <img src="assets/Kalman Filter.png" alt="Kalman Filter Ball Tracking preview" loading="lazy" decoding="async">
+                    </div>
+                </a>
+                <div class="project-info">
+                    <a href="https://github.com/Enoch-Lee-04/Kalman-Filter-Ball-Tracking" target="_blank" class="project-title-link">
+                        <h3>Kalman Filter Ball Tracking Simulation</h3>
+                    </a>
+                    <p>MuJoCo and OpenCV ball-tracking simulation that uses a custom NumPy Kalman filter to predict motion over a 180ms latency horizon and guide interception.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Enoch-Lee-04/Kalman-Filter-Ball-Tracking" target="_blank" class="btn">View Project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
                 <a href="https://github.com/Enoch-Lee-04/Fraud-Payment-Detection-using-ML" target="_blank" class="project-image-link">
                     <div class="project-image">
                         <img src="assets/Decision Tree.png" alt="AI-Powered Fraud Detection System preview" loading="lazy" decoding="async">
@@ -151,7 +186,7 @@
                     <a href="https://github.com/Enoch-Lee-04/Fraud-Payment-Detection-using-ML" target="_blank" class="project-title-link">
                         <h3>AI-Powered Fraud Detection System for Financial Transactions</h3>
                     </a>
-                    <p>Developed an end-to-end AI-powered fraud detection system for financial transactions with 99.97% accuracy.</p>
+                    <p>End-to-end AI-powered fraud detection system for financial transactions with 99.97% accuracy.</p>
                     <div class="project-links">
                         <a href="https://github.com/Enoch-Lee-04/Fraud-Payment-Detection-using-ML" target="_blank" class="btn">View Project →</a>
                     </div>
@@ -167,7 +202,7 @@
                     <a href="https://github.com/Enoch-Lee-04/Weather-Forcasting-Prediction" target="_blank" class="project-title-link">
                         <h3>Weather Forecasting System for Austin, TX</h3>
                     </a>
-                    <p>Developed a time-series forecasting solution using Facebook's Prophet and Python to predict local weather patterns for 2 years. Generated features from historical weather data (2015-2025).</p>
+                    <p>A time-series forecasting solution using Meta Prophet and Python to predict local weather patterns for 2 years. Generated features from historical weather data (2015-2025).</p>
                     <div class="project-links">
                         <a href="https://github.com/Enoch-Lee-04/Weather-Forcasting-Prediction" target="_blank" class="btn">View Project →</a>
                     </div>
@@ -214,7 +249,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:lee.enoch03@gmail.com">lee.enoch03@gmail.com</a>
+                    <a href="mailto:EL3541@columbia.edu">EL3541@columbia.edu</a>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-github"></i>
