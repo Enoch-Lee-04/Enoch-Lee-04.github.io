@@ -502,7 +502,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     gap: 0.25rem 1rem;
     margin-bottom: 1rem;
 }
@@ -513,11 +513,29 @@ p {
     margin-bottom: 0;
 }
 
+.company-info {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.company-info .company,
+.job-location {
+    line-height: 1.3;
+}
+
+.job-location {
+    font-size: 1rem;
+    color: var(--light-text);
+    margin: 0;
+}
+
 .period {
     font-size: 1.1rem;
     color: var(--light-text);
     margin-bottom: 0;
     text-align: right;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .achievements {
